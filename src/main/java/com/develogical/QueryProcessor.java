@@ -15,7 +15,8 @@ public class QueryProcessor {
             return "jhcjrr";
         }
         if (query.toLowerCase().contains("plus")) {
-            String[] parts = query.split(" ");
+            String queryWithSpace = query.replaceAll("%20","");
+            String[] parts = queryWithSpace.split(" ");
             int n1 = Integer.parseInt(parts[2]);
             int n2 = Integer.parseInt(parts[4]);
             int sum = n1+n2;
