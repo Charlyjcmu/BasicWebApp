@@ -14,6 +14,13 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("your name")) {
             return "jhcjrr";
         }
+        if (query.toLowerCase().contains("plus")) {
+            String[] parts = query.split(" ");
+            int n1 = Integer.parseInt(parts[2]);
+            int n2 = Integer.parseInt(parts[4]);
+            int sum = n1+n2;
+            return String.valueOf(sum);
+        }
         return "";
     }
 }
