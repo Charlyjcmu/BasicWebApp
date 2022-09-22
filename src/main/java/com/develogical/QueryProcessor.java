@@ -11,6 +11,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("byron")) {
             return "Lord Byron was a poet";
         }
+        if (query.toLowerCase().contains("your name")) {
+            return "jhcjrr";
+        }
         return "";
     }
 }
