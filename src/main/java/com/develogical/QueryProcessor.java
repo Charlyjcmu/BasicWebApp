@@ -18,7 +18,7 @@ public class QueryProcessor {
             return "Paris";
         }
         if (query.toLowerCase().contains("plus")) {
-            String queryWithSpace = query.replaceAll("%20","");
+            String queryWithSpace = query.replaceAll("%20"," ");
             String[] parts = queryWithSpace.split(" ");
             int n1 = Integer.parseInt(parts[2]);
             int n2 = Integer.parseInt(parts[4]);
@@ -26,7 +26,7 @@ public class QueryProcessor {
             return String.valueOf(sum);
         }
         if (query.toLowerCase().contains("multiplied")) {
-            String queryWithSpace = query.replaceAll("%20","");
+            String queryWithSpace = query.replaceAll("%20"," ");
             String[] parts = queryWithSpace.split(" ");
             int n1 = Integer.parseInt(parts[2]);
             int n2 = Integer.parseInt(parts[5]);
@@ -34,7 +34,7 @@ public class QueryProcessor {
             return String.valueOf(product);
         }
         if (query.toLowerCase().contains("minus")) {
-            String queryWithSpace = query.replaceAll("%20","");
+            String queryWithSpace = query.replaceAll("%20"," ");
             String[] parts = queryWithSpace.split(" ");
             int n1 = Integer.parseInt(parts[2]);
             int n2 = Integer.parseInt(parts[4]);
